@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+.app {
+  width: 500px;
+  margin: auto;
+  font-size: 18px;
+  font-family: 'Slabo 27px', serif;
+}
+
+.app * {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  outline: none;
+}
+.app .row {
+  margin-bottom: 1.5em;
+}
+
+.app .row h1 {
+  text-align: center;
+  padding: 0.8em 0px;
+}
+
+.app .row select, .app .row input, .app .row button {
+  text-align: center;
+  padding: 0.5em;
+  height: 3em;
+  border-radius: 2px;
+  border: 1px solid lightgrey;
+}
+
+.app .row select, .app .row input.bpm, .app .row input.note, .app .row .submit {
+  width: calc(50% - 8px);
+  border-radius: 2px;
+  border: 1px solid lightgrey;
+}
+
+.app .row select, .app .row input, .app .row .songcontainer {
+  border:  1.2px solid #347FC4 !important;
+  border-radius: 2px;
+  background-color: rgba(52,127,196,0.1);
+  color: #347FC4;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+input:focus {
+  color:  rgba(52,127,196,0.2);
+}
+
+::-webkit-input-placeholder {
+  color: #347FC4;
+  font-weight: bold;
+}
+
+.app .row .songcontainer {
+  min-width: 100%;
+  text-align: center;
+  display: inline-block;
+  min-height: 54px;
+  display: inline-block;
+}
+
+.app .row .notecontainer {
+  width: 80px;
+  text-align: center;
+  display: inline-block;
+  padding: 1em 1em;
+  /*color:  #347FC4;*/
+  color:  black;
+  font-size: 15px;
+  font-weight: bold;
+
+  float: left;
+}
+
+.app .row select, .app .row .note {
+  margin-right: 16px;
+}
+
+.app .row button {
+  background-color: #347FC4;
+  color:  white;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.app .row button:hover {
+  cursor: pointer;
+  background-color: rgba(52,127,196,0.9);
+}
+
+.app .row select {
+  text-align-last: center;
+}
+
+.app .row .play {
+  width: 100%;
+}
+
+.app .row.load input, .app .row.save input {
+  width: calc(50% - 8px);
+  margin-right: 16px;
+}
+
+.app .row.load button, .app .row.save button {
+  width: calc(50% - 8px);
+}
